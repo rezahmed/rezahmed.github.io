@@ -6,7 +6,7 @@ layout: default
 
 <h3>Verifying Safety and Liveness for the FlexTM Hybrid Transactional Memory</h3>
   
-<p>Authors: Parosh Aziz, Sandhya Dwarkadas, <a href="www.ahmedrezine.com">Ahmed Rezine</a>, Arrvindh Shriramanx and Yunyun Zhu</p>
+<p>Authors: Parosh Aziz, Sandhya Dwarkadas, <a href="http://www.ahmedrezine.com">Ahmed Rezine</a>, Arrvindh Shriramanx and Yunyun Zhu</p>
 
 <p> Abstract: 
 We consider the verification of safety (strict se- rializability and abort consistency) and liveness (obstruction and livelock freedom) for the hybrid transactional memory framework FLEXTM. This framework allows for flexible imple- mentations of transactional memories based on an adaptation of the MESI coherence protocol. FLEXTM allows for both eager and lazy conflict resolution strategies. Like in the case of Software Transactional Memories, the verification problem is not trivial as the number of concurrent transactions, their size, and the number of accessed shared variables cannot be a priori bounded. This complexity is exacerbated by aspects that are specific to hardware and hybrid transactional memories. Our work takes into account intricate behaviours such as cache line based conflict detection, false sharing, invisible reads or non-transactional instructions. We carry out the first automatic verification of a hybrid transactional memory and establish, by adopting a small model approach, challenging properties such as strict serializability, abort consistency, and obstruction freedom for both an eager and a lazy conflict resolution strategies. We also detect an example that refutes livelock freedom. To achieve this, our prototype tool makes use the latest antichain based techniques to handle systems with tens of thousands of states.

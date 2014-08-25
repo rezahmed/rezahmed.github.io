@@ -6,7 +6,7 @@ layout: default
 
 <h3>Counter-Example Guided Fence Insertion under TSO</h3>
   
-<p>Authors: Parosh Aziz Abdulla, Mohamed Faouzi Atig, Yu-Fang Chen, Carl Leonardsson, <a href="www.ahmedrezine.com">Ahmed Rezine</a></p>
+<p>Authors: Parosh Aziz Abdulla, Mohamed Faouzi Atig, Yu-Fang Chen, Carl Leonardsson, <a href="http://www.ahmedrezine.com">Ahmed Rezine</a></p>
 
 <p> Abstract: We give a sound and complete fence insertion procedure for concur- rent finite-state programs running under the classical TSO memory model. This model allows write to read relaxation corresponding to the addition of an un- bounded store buffer between each processor and the main memory. We introduce a novel machine model, called the Single-Buffer (SB) semantics, and show that the reachability problem for a program under TSO can be reduced to the reacha- bility problem under SB. We present a simple and effective backward reachability analysis algorithm for the latter, and propose a counter-example guided fence in- sertion procedure. The procedure is augmented by a placement constraint that allows the user to choose places inside the program where fences may be in- serted. For a given placement constraint, we automatically infer all minimal sets of fences that ensure correctness. We have implemented a prototype and run it successfully on all standard benchmarks together with several challenging exam- ples that are beyond the applicability of existing methods. </p>
 
