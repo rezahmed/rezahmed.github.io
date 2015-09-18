@@ -1,7 +1,8 @@
  We thank the reviewers for their pertinent remarks. We took them into
 account in the revised version. 
 
-Follows our answers (starting with ">>") in to the reviewers' remarks (starting with "-").
+Follows our answers (starting with ">>") in to the reviewers' remarks
+(starting with "-").
 
 
 
