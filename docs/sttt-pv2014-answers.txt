@@ -1,0 +1,201 @@
+
+We thank the reviewers for their valuable comments. We took all of
+them into account in the new version and list some of our answers
+here:
+
+
+* Unfortunately, I was not able to look at the benchmarks myself due to problems
+with signing up at the web-page referred to in the paper.
+> We put the tool in a new repository, fixed the login issue and updated the link provided in the paper.
+
+Intro:
+* what is the size of a barrier?
+> We mean by the size of the barrier, the number of processes
+participating in the barrier. This number is fixed but arbitrary. This
+is added in the introduction.
+
+* is removing a process really the same thing as reseting it?
+$ Processes are not reset by monotonic abstraction. Since monotonic
+abstraction closes upwards in backward, the effect in forward is to
+delete processes that violate the guard of a transition. A reference
+is added to the original monotonic abstraction paper.
+
+Motivating example:
+
+** discussion of automatically generated predicates - can you give some more
+hint about (1) what kind of predicates and how does thread modular analysis
+infer, and (2) why this helps ?
+> We have developped more the explanations and added examples
+
+* you introduce exp and then talk about exp_1. Where does exp_1 come from?
+* can you first say simply and intuitively what exp_1[x] is and then give the
+definition? 
+> exp_1 was indeed exp and we corrected and clarified it.
+
+
+* can you say intuitively what exp[x,x'] is?
+>We mean the evaluation of the expression exp wrt the union of the two
+ mappings x and x'. We clarified this in the text and changed the
+ notation.
+
+* handling multisets below example is not correct, strictly speaking.
+E.g., if multiset is a map from a set to numbers, then the "bijection" between
+multisets that you talk about is not a standard set but also a multiset (so, it
+is not a standard mapping).
+> The definition of bijection was indeed erroneous. We fixed that.
+
+
+* §Semantics
+* "process is at state l'" - l' is not a state of one process
+>We meant the local state which is a valuation of the local
+ variables. Clarified in the text.
+
+* the arrow notation in the sentence "The run is P feasible ..." has not been
+introduced I think,
+> It was indeed not defined. We clarified it.
+
+* (2) - is the notation omega[s,X] where X is a map defined?
+> This was unclear. We clarified the text.
+
+Predicate abstraction
+** bottom of page 7: what is PredOf(v^b)? I don't understand what bijection is
+defined there.
+>It indeed means what predicate is associated to the boolean variable
+ v^b. We clarified the text and also added an example.
+
+* instead of giving example of how ch works, I would you just defined it (move
+the definition from the latter text here). I did not figure it out from the example.
+> We added a detailed example with more explanation for how this
+  operator is used when applying predicate abstraction
+
+§Syntax and semantics of b. programs
+** I do not understand where did broadcast and passive variables come
+from.  They don't appear in concurrent programs (?).
+> These variables indeed don't appear in original concurrent
+programs. They appear during abstraction. We have added an example and
+a reference to clarify.
+
+
+* Is the requirement on assignment to non-passive (active?) variables
+necessary?Is it a requirement or is it something which is guaranteed by the
+abstraction?
+> This is guaranteed by the predicate abstraction we adopt in this work (cited in the paper). 
+
+
+§starting "To simplify ..."
+* I don't understand the first lines of starting "First, we change domain ..."
+What is this supposed to do?
+explain the mechanics of the boradcast in more details.
+>We have added a detailed example to clarify to explain the necessity of a broadcast
+and the involved mechanics. 
+
+
+* the paragraphs "Evaluating ..." and "Relation ... " After some time I mostly
+gave up parsing the notation and decided to believe that they mean standard
+intuitive things. If it is the case, maybe you could say it before giving the
+definitions.
+> Evaluation of a counting predicate indeed means that we associate a
+boolean value to the configuration of the parameterized system. The
+relation of P and abst(P) is that abst(P) is a sound abstraction of P.
+We tried to clarify the text.
+
+§Encoding into counter machine
+** I had trouble with the notation such as
+predsOf(emptyset,exprsOf(Omega_Pc,S,L))) through the paper. It would help to
+concentrate (also) on intuitive meaning of things. Sometimes things that are not
+so complicated after all seem to be presented by unintuitive formal definitions
+and intuitive explanations are missing.
+$ predsOf(emptyset,exprsOf(Omega_Pc,S,L))) means predicates built of
+comparisons between expressions involving shared, local and counting
+variables. We tried to clarify this and removed the empty set. We did not
+find a simpler way to present such predicates since counting variables represent
+the number of processes satisfying some predicate.
+
+* "There is a bijection that associates a process configuration ..." - you mean
+that each process configuration is associated with a counter? Is the bijection
+important by itself?
+> Indeed a counter is associated to every "boolean" process
+  configuration. This is a bijection. We could associate a counter to
+  several such configurations, but it has to be done in a sound way
+  and we do not explain this for simplicity..
+
+
+* p10, left column:
+"Observe that if the predicate ..." - I did not get why this is important
+> The counting predicate in question is to be evaluated in a
+configuration of the counter machine where no concrete value for shared
+variables is available (because the counter machine is abstracted from
+the boolean program and not the original program).
+
+
+*Lemma 1 - some intuition? why the name "atomic"?
+$We had the word "atomic" because the translation concerns atomic
+steps of the concurrent program. We removed the term "atomic" as the
+lemma is mainly about the translation.
+
+
+§Encoding precision:
+** I don't see why exactly does the system become monotonic. Can you explain a
+bit more what is the step which does that?
+> The relation between the number of processes and the associated
+  counter is lost after predicate abstraction. As a result, processes
+  that were blocked (for example, by a counter implemented barrier) are no more
+  blocked after abstraction. So having more processes does not disable
+  transitions. We tried to clarify this. 
+
+Example 2 
+* "c_((pc_2.emptyset))"
+>We tried to clarify this.
+
+** again, could you say somthing more about how you derive the invariants and
+why are they needed (why are they not derivable by the method itself)
+> see the thread modular example
+
+* Theorem 1 - I am not 100% sure I understand the "inner loop" and "outer loop"
+well. 
+> Outer stands for predicate abstraction refinement and inner for
+monotonic abstraction refinement. We tried to clarify this.
+
+
+** I could not get access to 
+"https://gitlab.ida.liu.se/zeiga33/paramverify/tree/pacman"
+and I was not able to sign up and log in. Particularly, after signing up, the
+page said that the password is wrong, and Reset password says Email
+not found.
+> We changed the repository and updated the link in the paper.
+
+Some notes about literature:
+
+* is your use of invariants to improve the precision in any way similar to the
+use of invariants in
+Javier Esparza, Ruslán Ledesma-Garza, Rupak Majumdar, Philipp Meyer, Filip Niksic:
+An SMT-Based Approach to Coverability Analysis. CAV 2014: 603-619
+> This paper targets petri nets (inherently monotonic) and generates
+  invariants by weakening SMT formulas. Although we also target
+  coverability, we do it for counter machines obtained by
+  strengthening monotonic systems into non-monotonic ones. It is
+  unclear how to apply this approach to our systems.
+
+* the work
+Parosh Aziz Abdulla, Frédéric Haziza, Lukás Holík:
+Block Me If You Can! - Context-Sensitive Parameterized Verification. SAS 2014: 1-17
+extends [2] and strengthens essentially monotonic abstraction used in [2]
+> These works are not capable of capturing invariants that depend on
+  the global number of processes in certain states.
+
+* this is an interesting recent work on coverability of monotonic systems
+Johannes Kloos, Rupak Majumdar, Filip Niksic, Ruzica Piskac:
+Incremental, Inductive Coverability. CAV 2013: 158-173
+> The authors propose a generalization of the IC3 algorithm that was
+  recently introduced for verification of hardware on downward-finite
+  well-structured transition systems. The algorithm is based on
+  inductive invariants. It computes an inductive downward-closed
+  invariant by approximating the forward-reachable states and
+  strengthens it based on counterexamples obtained using a backward
+  exploration.  As the work targets well-structured transition
+  systems, it is unclear how to adopt it to non-monotonic systems that
+  we work with.
+
+> We thank the reviewer for the three references. We included them in
+  our "related works" section.
+
