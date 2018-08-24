@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h2>Research</h2>
+
+<h3>Augumented Journal version: An Integrated Specification and Verification Technique for Highly Concurrent Data Structures</h3>
+  
+<p>Authors: Parosh Aziz Abdulla, Frédéric Haziza, Lukas Holik, Bengt Jonsson  and <a href="http://www.ahmedrezine.com">Ahmed Rezine</a></p>
+
+<p> Abstract: 
+We present a technique for automatically verify- ing safety properties of concurrent programs, in particular programs which rely on subtle dependencies of local states of different threads, such as lock-free implementations of stacks and queues in an environment without garbage collection. Our technique addresses the joint challenges of infinite-state specifications, an unbounded number of threads, and an un- bounded heap managed by explicit memory allocation. Our technique builds on the automata-theoretic approach to model checking, in which a specification is given by an automaton that observes the execution of a program and accepts execu- tions that violate the intended specification. We extend this approach by allowing specifications to be given by a class of infinite-state automata. We show how such automata can be used to specify queues, stacks, and other data structures, by extending a data-independence argument. For verification, we develop a shape analysis, which tracks correlations be- tween pairs of threads, and a novel abstraction to make the analysis practical. We have implemented our method and used it to verify programs, some of which have not been verified by any other automatic method before.
+ </p>
+
+<p>Submitted as an invited journal version </p>
+
+<p>Working version (<a href="/research/journal-concurrent-structures-working2014.pdf">pdf</a>) 2014</p>  
+
+
