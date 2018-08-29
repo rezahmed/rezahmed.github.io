@@ -5,10 +5,6 @@ layout: ceniit
 <h2> Bachelor and master's project proposals</h2>
 
 <ul>
-  <li><a href="#bounds">Automatic Detection of Static Problem Bounds for Object
-  Instantiations of UML Class Diagrams</a></li>
-  <li><a href="#critical-sequence">Automatic Detection of Critical Sequences in Safety Critical
-  Reactive Systems</a> </li>
   <li><a href="#incremental">Incremental Inductive Verification, Does It Work? Does It Scale?</a>
   </li>
   <li><a href="#gpu-synch">Verification of Synchronization patterns of
@@ -17,103 +13,6 @@ layout: ceniit
   </a></li>
 </ul>
 
-<h3 id="bounds">Automatic Detection of Static Problem Bounds for Object
-  Instantiations of UML Class Diagrams</h3>
-
-<p>
-(Bachelor's level, in
-  collaboration with Saab, possibility of economical compensation)
-Models are often used during the successive design steps
-of new programs. This allows to describe, explore and reason
-about different solutions to the problems the new
-program is supposed to solve.
-
-Ensuring consistency and correctness of such models can
-save important resources by catching errors and problems
-as early as possible during the design.
-Indeed, lurking bugs can require important resources to eradicate
-if noticed at the implementation level.
-Such costs can be dramatic for safety critical applications.
-This project deals with such applications at Saab.
-
-The goal is to implement a tool, preferably as an Eclipse plugin,
-to generate static bounds for the number
-of instances of each class of some specific class diagram description.
-The class diagram is given in some format together with additional
-invariants supplied by the user, e.g., in OCL (Object Constraint
-Language).
-
-The student should:
-<ul>
-<li> exactly define the input format,</li>
-<li> read the input format into an internal description,</li>
-<li> carry the static analysis by leveraging on existing 
-ILP (integer programming) and SMT (Satisfiability Modulo Theory)
-solvers, </li>
-<li> propose safe bounds and compare them to the existing manually supplied ones</li>
-</ul>
-</p>
-
-<h4>Qualification</h4>
-
-<p> This 16 hp thesis will be carried by one bachelor student.
-<ul>
-<li> The student should have very good programming skills</li>
-<li> The student should have taken a compiler course </li>
-<li> Familiarity with implementing Eclipse plugins is a plus.</li>
-<li> A course in (integer) linear programming is a plus </li>
-</ul>
-</p>
-
-<h3 id="critical-sequence">Automatic Detection of Critical Sequences in Safety Critical
-Reactive Systems</h3>
-<p>
-(Master's level, in collaboration with Saab,
-  possibility of economical compensation)
-The behavior of many computer systems is not captured, in a satisfactory manner, in terms
-of some input/output function.
-Instead, such systems are meant to  continuously run and to react to their surrounding, be it the user,
-the environment, or both.
-Some reactive systems are safety, i.e., any error or misconception in their executions can
-have dramatic consequences. One cannot afford to just restart the system.
-It is therefore important to analyze the behavior
-of such systems in order to make sure that certain properties
-do hold under all executions.
-If some property does not hold, it is then important to exhibit concrete
-executions illustrating this fact.
-
-This project focuses on automatizing the analysis of
-specific reactive systems given in terms of finite
-state machines sharing among themselves and with their
-surrounding a number of (internal) queues
-and variables.
-
-The objective of the project is to ensure that certain bounds on the
-possible executions are always respected for
-environments following certain patterns, or to exhibit concrete
-counter-examples.
-
-For this purpose, different techniques are to be discussed and
-a tool is to be implemented in order to:
-<ul>
-<li> parse in descriptions of the targeted reactive systems</li>
-<li> perform sound abstractions to ease the analysis </li>
-<li> leverage on existing SMT (Satisfiability Modulo Theory) solvers
-  in order to explore possible behaviors</li>
-<li> establish satisfactory bounds, to exhibit concrete executions,
-  or to improve the abstractions and to repeat the analysis</li>
-</ul>
-</p>
-
-
-<h4>Qualification</h4>
-<p>This 30 hp thesis will be carried by one Masters student.
-<ul>
-<li> The student should have very good programming skills</li>
-<li> The student should have taken a compiler course</li>
-<li> Good background in discrete mathematics and logic are a plus</li>
-</ul>
-</p>
 
 <h3 id="incremental">Incremental Inductive Verification, Does It Work? Does It Scale?</h3>
 
