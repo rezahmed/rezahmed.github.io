@@ -5,7 +5,6 @@ title: Teaching
 
 <div class="post">
 	<h3>Teaching</h3>
-	<p> Courses I am, or have been, course leader and examiner for:</p>
 
 	<h4>Current courses:</h4>
 
@@ -16,6 +15,7 @@ title: Teaching
   	</ul>
 
 	<h4>Previous courses:</h4>
+	<p> Courses I have been course leader and examiner for:</p>
 	<ul>
 	<li>Introduction to automatic verification</li>
 	<li>Satisfiability Modulo Theory and Optimization</li>		

@@ -4,6 +4,6 @@ title:  "New PhD student"
 date:   2024-01-20
 ---
 
-<p class="intro"><span class="dropcap">W</span>e are looking for a new PhD student to work on extending the applicability of verification to Reinforcement learning. See <a href="/veridrl">here</a> for more information about the project. We will soon announce the position. Contact me if you have questions.</p>
+<p class="intro"><span class="dropcap">I</span>am looking for a new PhD student to work on extending the applicability of verification to Reinforcement learning. See <a href="/veridrl">here</a> for more information about the project. We will soon announce the position. Contact me if you have questions.</p>
 
  
