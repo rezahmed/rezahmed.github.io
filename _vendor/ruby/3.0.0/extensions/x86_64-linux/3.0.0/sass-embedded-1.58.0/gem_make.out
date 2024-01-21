@@ -1,0 +1,10 @@
+current directory: /home/rahmed/Documents/presentations/jekyll/long-haul/_vendor/ruby/3.0.0/gems/sass-embedded-1.58.0/ext/sass
+/home/rahmed/.rvm/rubies/ruby-3.0.0/bin/ruby -I/home/rahmed/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -rrubygems /home/rahmed/Documents/presentations/jekyll/long-haul/_vendor/ruby/3.0.0/gems/rake-13.1.0/exe/rake RUBYARCHDIR\=/home/rahmed/Documents/presentations/jekyll/long-haul/_vendor/ruby/3.0.0/extensions/x86_64-linux/3.0.0/sass-embedded-1.58.0 RUBYLIBDIR\=/home/rahmed/Documents/presentations/jekyll/long-haul/_vendor/ruby/3.0.0/extensions/x86_64-linux/3.0.0/sass-embedded-1.58.0
+fetch https://github.com/sass/dart-sass-embedded/releases/download/1.58.0/sass_embedded-1.58.0-linux-x64.tar.gz
+tar -vxC . -f sass_embedded-1.58.0-linux-x64.tar.gz --no-same-owner --no-same-permissions
+mkdir -p .
+sass_embedded/src/LICENSE
+sass_embedded/src/dart
+sass_embedded/src/dart-sass-embedded.snapshot
+sass_embedded/dart-sass-embedded
+rm sass_embedded-1.58.0-linux-x64.tar.gz

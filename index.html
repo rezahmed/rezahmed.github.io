@@ -1,0 +1,30 @@
+---
+layout: default
+title: Long Haul
+---
+
+<div class="home" id="home">
+
+  <img src="{{ '/assets/img/ahmed.jpg' | relative_url }}" alt="" class="center">
+     <p>
+	Associate Professor (Docent) in Computer Science at <a href="https://www.ida.liu.se/">Linköping University</a>.
+	I look for ways to extend automated verification.
+	I obtained my PhD degree under the supervision of <a href="https://user.it.uu.se/~parosh/">Prof. Parosh Abdulla</a>
+	in Uppsala University and my Engineering degree from <a href="https://www.ept.tn/">Tunisia's Polytechnic School</a>.</p>
+     <p>Contact: <a href="https://www.ida.liu.se/department/contact/contactsearch.en.shtml?NAME=ahmed">firstname.aftername@liu.se</a></p>
+</div>
+
+<div class="posts noList">
+  {%- for post in paginator.posts -%}
+  <article>
+    <span class="date">{{ post.date | date: '%B %Y' }}</span>
+    <h5>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h5>
+    <p>
+      {%- if post.description -%}{{ post.description }}{%- else -%}{{
+      post.excerpt | strip_html }}{%- endif -%}
+    </p>
+  </article>
+  {%- endfor -%}
+</div>

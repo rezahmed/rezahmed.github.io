@@ -1,0 +1,30 @@
+title: Ahmed Rezine
+description: Homepage powered by Long Haul, a Jekyll theme built with SASS
+
+url: http://http://rezahmed.github.io
+# Only necessary when hosting your site in a sub-directory. Project sites hosted on GitHub Pages are the common use-case of this variable.
+baseurl: # Ex: /project-page
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+# Header Option
+# header: large
+
+sass:
+    style: compressed
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 4
+
+navigation:
+    - title: Home
+      url: /index.html
+    - title: Research
+      url: /research
+    - title: Teaching
+      url: /teaching
+
+disqus:
+    shortname: rezahmed
