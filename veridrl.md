@@ -16,24 +16,6 @@ title: VeriDRL - Verification of Deep Reinforcement Learning Applications
      and several works stress the importance of formally ensuring the
      safety if the resulting applications [7, 13].</p>
 
-     <p> In control application of reinforcement learning, an agent
-     interacts with an environment and tries to maximize a reward
-     function. For this, The behavior of the environment might be
-     known a priori (and the focus will be on optimizing the reward)
-     or might need to be explored (and the focus will be on
-     discovering new behaviors that will hopefully result in better
-     rewards). Practically, a reinforcement learning solution will
-     read the state of the system it aims to control, perform an
-     action according to the identified policy, and obtain as a result
-     a new state of the environment and a new reward. This set-up
-     particularly suits ML solutions for synthesizing optimal
-     policies, whether the environment behavior is known or
-     approximated with samples. However, given the central role of
-     such policies and their direct impact on safety-critical systems
-     (e.g., autonomous drones or insulin pumps), the verification
-     problem of the resulting systems is particularly relevant [7,
-     13]. </p>
-
      <h3>News</h3>	
 
      <p>We are looking for a
@@ -57,6 +39,26 @@ title: VeriDRL - Verification of Deep Reinforcement Learning Applications
     have questions.</p>
 
      <h3>The Project</h3>	
+
+
+     <p> In control application of reinforcement learning, an agent
+     interacts with an environment and tries to maximize a reward
+     function. For this, The behavior of the environment might be
+     known a priori (and the focus will be on optimizing the reward)
+     or might need to be explored (and the focus will be on
+     discovering new behaviors that will hopefully result in better
+     rewards). Practically, a reinforcement learning solution will
+     read the state of the system it aims to control, perform an
+     action according to the identified policy, and obtain as a result
+     a new state of the environment and a new reward. This set-up
+     particularly suits ML solutions for synthesizing optimal
+     policies, whether the environment behavior is known or
+     approximated with samples. However, given the central role of
+     such policies and their direct impact on safety-critical systems
+     (e.g., autonomous drones or insulin pumps), the verification
+     problem of the resulting systems is particularly relevant [7,
+     13]. </p>
+
 
      <p>Recent development in ML verification [1, 9, 15, 14, 5] mainly
      focus on simple properties such as local robustness of
