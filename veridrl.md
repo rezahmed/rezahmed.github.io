@@ -6,6 +6,31 @@ title: VeriDRL - Verification of Deep Reinforcement Learning Applications
 <div class="post">
      <h2> {{page.title}} </h2>
      <h4>PI. Ahmed Rezine, Co-PI. Soheil Samii</h4>
+
+<div class="posts noList">
+  <article>
+    <h5>
+    New PhD student
+    </h5>
+    <p class="intro"><span class="dropcap">I</span>am looking for a
+    new PhD student to work on extending the applicability of
+    verification to Reinforcement learning.
+    If intereseted, read carefully. You will be asked to supply
+    a project proposal in the application. </p>
+    <h6>Focus</h6>:
+    <ul>
+    <li>An important source of confusion: The project is not about using ML algorithms, it is about verifying obtained networks behave correctly</li>
+    <li>Current state of the art can only handle "very small" networks. The project
+    is about scaling up the size of verifiable networks</li>
+    <li>Interest in Mathematics, proofs, Logic, Probabilities are central to the project</li>
+    <li>Programming and modifying open source tools is inherent in the project</li>
+    </ul>
+    We will soon announce the position. Contact me if you
+    have questions.</p>
+  </article>
+</div>
+
+
      <p> Machine learning (ML) solutions are being massively adopted
      in all sorts of applications. This project particularly targets
      Deep Reinforcement Learning (DRL) for control
