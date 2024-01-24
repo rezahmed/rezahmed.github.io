@@ -6,32 +6,8 @@ title: VeriDRL - Verification of Deep Reinforcement Learning Applications
 <div class="post">
      <h2> {{page.title}} </h2>
      <h4>PI. Ahmed Rezine, Co-PI. Soheil Samii</h4>
-
-<div class="posts noList">
-  <article>
-    <h5>
-    New PhD student
-    </h5>
-    <p class="intro"><span class="dropcap">I</span>am looking for a
-    new PhD student to work on extending the applicability of
-    verification to Reinforcement learning.
-    If intereseted, read carefully. You will be asked to supply
-    a project proposal in the application. </p>
-    <h6>Focus</h6>:
-    <ul>
-    <li>An important source of confusion: The project is not about using ML algorithms, it is about verifying obtained networks behave correctly</li>
-    <li>Current state of the art can only handle "very small" networks. The project
-    is about scaling up the size of verifiable networks</li>
-    <li>Interest in Mathematics, proofs, Logic, Probabilities are central to the project</li>
-    <li>Programming and modifying open source tools is inherent in the project</li>
-    </ul>
-    We will soon announce the position. Contact me if you
-    have questions.</p>
-  </article>
-</div>
-
-
-     <p> Machine learning (ML) solutions are being massively adopted
+     <p class="intro"><span class="dropcap">M</span>achine learning (ML)
+     solutions are being massively adopted
      in all sorts of applications. This project particularly targets
      Deep Reinforcement Learning (DRL) for control
      applications. Despite its performance, DRL suffers, like other ML
@@ -57,6 +33,30 @@ title: VeriDRL - Verification of Deep Reinforcement Learning Applications
      (e.g., autonomous drones or insulin pumps), the verification
      problem of the resulting systems is particularly relevant [7,
      13]. </p>
+
+     <h3>News</h3>	
+
+     <p>We are looking for a
+    new PhD student to work on extending the applicability of
+    verification to Reinforcement learning.
+    If intereseted, read carefully. You will be asked to supply
+    a description of how you can contribute to the project when you apply for the PhD position. 
+    Focus of the project:</p>
+    <ul>
+    <li>Important: the project IS NOT about using ML algorithms.
+    It is about verifying ML networks behave correctly in DRL Applications.</li>
+    <li>Current state of the art can only handle "very small" networks. The project
+    is about scaling up the size and extending applicability of verification. </li>
+    <li>Interest in Mathematical proofs, Logic, Probabilities are central to the project.</li>
+    <li>Experience with control application, and possible applications of DRL, are
+    appreciated.</li>	
+    <li>Intensive programming and modifcation of open source tools is inherent
+    to the progress the project</li>
+    </ul>
+    <p>We will soon announce the position. Contact me if you
+    have questions.</p>
+
+     <h3>The Project</h3>	
 
      <p>Recent development in ML verification [1, 9, 15, 14, 5] mainly
      focus on simple properties such as local robustness of
@@ -141,6 +141,7 @@ title: VeriDRL - Verification of Deep Reinforcement Learning Applications
      exploratory policies in unknown environments. </li>
      </ul>
      </p>
+
 
      <h3>References</h3>
      <ul>

@@ -5,13 +5,13 @@
     <description>Homepage powered by Long Haul, a Jekyll theme built with SASS</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 Jan 2024 21:27:50 +0100</pubDate>
-    <lastBuildDate>Sun, 21 Jan 2024 21:27:50 +0100</lastBuildDate>
+    <pubDate>Wed, 24 Jan 2024 14:51:09 +0100</pubDate>
+    <lastBuildDate>Wed, 24 Jan 2024 14:51:09 +0100</lastBuildDate>
     <generator>Jekyll v4.3.2</generator><item>
         <title>New PhD student</title>
-        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;W&lt;/span&gt;e are looking for a new PhD student to work on extending the applicability of verification to Reinforcement learning. See &lt;a href=&quot;/veridrl&quot;&gt;here&lt;/a&gt; for more information about the project. We will soon announce the position. Contact me if you have questions.&lt;/p&gt;
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt;am looking for a new PhD student to work on extending the applicability of verification to Reinforcement learning. See &lt;a href=&quot;/veridrl&quot;&gt;here&lt;/a&gt; for more information about the project. We will soon announce the position. Contact me if you have questions.&lt;/p&gt;
 
-</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;W&lt;/span&gt;e are looking for a new PhD student to work on extending the applicability of verification to Reinforcement learning. See &lt;a href=&quot;/veridrl&quot;&gt;here&lt;/a&gt; for more information about the project. We will soon announce the position. Contact me if you have questions.&lt;/p&gt;
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt;am looking for a new PhD student to work on extending the applicability of verification to Reinforcement learning. See &lt;a href=&quot;/veridrl&quot;&gt;here&lt;/a&gt; for more information about the project. We will soon announce the position. Contact me if you have questions.&lt;/p&gt;
 </description><pubDate>Sat, 20 Jan 2024 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/rl-position/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/rl-position/</guid></item><item>

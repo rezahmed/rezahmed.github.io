@@ -1,0 +1,69 @@
+<h2> Bachelor and master's project proposals</h2>
+
+<ul>
+  <li><a href="#incremental">Incremental Inductive Verification, Does It Work? Does It Scale?</a>
+  </li>
+  <li><a href="#gpu-synch">Verification of Synchronization patterns of
+  GPU programs</a> </li>
+  <li><a href="#heisenbugs">Systematically checking concurrent code
+  </a></li>
+</ul>
+
+
+<h3 id="incremental">Incremental Inductive Verification, Does It Work? Does It Scale?</h3>
+
+<p>
+(Master's level, relevant for Prover Technology)
+Modern Multicore Computers are able to deliver a greater computing power for programs that can be run in parallel. This generated a great amount of work in coming up with ways to run programs in parallel. This project explores using Multicores to perform verification tasks.
+
+As opposed to testing and simulation, verification aims at exploring all possible scenarios before validating a program or a design. Verification typically targets safety critical systems (transportation, medical instruments, etc). The price of the supplied guaranty is a complexity that often limits verification efforts to only target (relatively) small and simple computer systems. An important amount of work aims at coming up with clever verification techniques and algorithms that allow to handle larger and more complex systems. 
+
+Among the newly developed algorithms for the verification of computer systems, some are particularly well suited for performing parallel verification. This project will experiment possibilities of running them on a multicore platform.</p>
+
+<h4>Qualifications</h4>
+
+<p>This 30 hp thesis can be carried by one or two Masters students
+that:
+<ul>
+<li>Enjoy discrete mathematics and logics (related courses)</li>
+<li>Very good programming skills (for instance in c++)</li>
+<li>Good knowledge in scripting and in functional programming is a
+plus</li>
+</ul>
+</p>
+
+<h3 id="gpu-synch">Verification of Synchronization patterns of GPU programs</h3>
+
+<p>
+(Master's level)
+More and more programs involve pieces of code targeting GPU platforms. This is particularity true for programs that allow for highly parallel computations. The problem is that the sought after gain is only achieved with low level tuning at threads level. This entails a degree of intricacy that make writing such programs extremely error prone and difficult to get right. 
+
+Testing and simulation based debugging are typically difficult in this context due to the concurrent and intricate nature of these programs. Promissing verification techniques already exist. This project is part of an effort that aims at verifying the absence of certain synchronization errors. For this, GPU programs need to be parsed and relevant synchronization parts need to be isolated. This project aims at isolating the synchronization patterns in typical GPU programs. </p>
+
+<h4>Qualifications</h4>
+<p>This 30 hp thesis can be carried by one or two Masters students that:
+<ul>
+  <li>Strong skills in compilers and good skills in OpenCl/CUDA programming.</li>
+  <li>Good skills in Discrete mathematics is a plus.</li>
+</ul>
+</p>
+
+<h3 id="heisenbugs">Systematically checking concurrent code</h3>
+
+<p>
+(Master's level)
+Powerful Multicore computers are now widespread and more and more concurrent code is being produced in order to get the most of these platforms. The problem is that designing, implementing, testing and debugging concurrent programs can be much more challenging and intricate than for sequential ones. Typically, concurrent programs allow for a huge number of possible interleavings between their concurrent sequential parts. Many bugs only appear in a fraction of these possible interleavings. Traditional testing approaches would only explore a tiny portion of these interleavings, leading to embarrassing hidden bugs mysteriously appearing at the customer site.
+
+<!-- This situation resulted in an important amount of work that looked for effective ways to hunt such bugs and to validate the concurrent code. The available techniques range from monitoring tools that record certain aspects (accesses, race conditions, etc) of the program behavior during runtime to verification tools that aim at proving correctness of the programs. These approaches strike different balances between scalability and resulting guaranty. Monitoring tools handle large and realistic programs but explore only a tiny fraction of the possible interleavings, namely the one that happens to be executed when executing the program under test. Verification tools typically either generate too many false positives (or false alarms, spurious errors that do not exist in the code), or do not scale. A middle approach, which gained a lot of interest lately, monitors and tests concurrent programs by methodologically controlling the interleavings to be executed in order to boost the explored state space and to reproduce the bugs if any are found. -->
+
+The student(s) will start by gaining familiarity with a number of tools (with available source code) for the systematic testing of concurrent programs. An important part of the work will then be to collect a set of benchmarks of concurrent code, either from existing work, from open source applications, or from Ericsson applications. It is expected that an important part of the code will be in a language different from the one handled by the targeted tools. The benchmarks might therefore have to be rewritten to C# and Java. The thesis will leverage on the availability of the source code in order to modify the tools and to experiment with different heuristics, combining with user supplied hints or with other verification or static analysis techniques. </p>
+
+<h4>Requirements</h4>
+<p>This 30 hp thesis can be carried by one or two Masters students that:
+<ul>
+<li> Have very good programming skills (C#, Java)</li>
+<li>Are familiar with Visual Studio and with concurrent programming</li>
+<li>Took Courses in Logics and Discrete mathematics (optional but
+definitely a plus)</li>
+</ul>
+</p>

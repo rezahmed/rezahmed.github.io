@@ -1,0 +1,435 @@
+ We thank the reviewers for their pertinent remarks. We took them into
+account in the revised version. 
+
+Follows our answers (starting with ">>") in to the reviewers' remarks
+(starting with "-").
+
+
+
+
+-----------------------------------------------------------------------
+
+Report 003-R-9
+
+- The paper covers a lot of ground, and some of the technical
+details are not provided in sufficient details. I don't know what
+is the page limit for the journal, but it would really help the
+reader if you could add examples in Section 6.2 - postcondition
+computation, and interference.
+>> We explain the postcondition computation of "x:=y.next" and 
+"x.next=y". We add a concrete example with a description of 6 
+shapes for the computation of x.next:=n performed by thread 2. 
+We also added more details for the interference part.
+
+- should observers be deterministic? 
+>> The observer need not be deterministic. We clarified this in
+>> section 3. 
+
+
+- figure 9 description error Last inserted and first extracted.
+>> Indeed. fixed. 
+
+- pg 7 paragraph 1 one before last line the "e" and "p" in
+specification switched.
+>> Should be e as in event.
+
+- Is there a connection in figure 11 between left and right? Mainly
+the non deterministic relations. h and T are (maybe) co-reachable h
+and x are (maybe) co-reachable
+Is this non determinism on location of h? or is it non determinism
+on the connectivity of the heap? and in both cases why is h and
+red/z1 deterministic?
+>> Saturated symbolic elements can be ambiguous as depicted in the
+>> figure. For instance, the left shape is a concrete shape captured
+>> by the symbolic element to the right. The symbolic element at the 
+>> right is an abstraction of infinitely many concrete shapes. This is 
+>> made clear in the caption. This symbolic element allows for non 
+>> determinism on the location of h, and hence on its connectivity. 
+>> Some elements are ambiguous (such as the position of h) and others 
+>> are not (such as the fact that there is no cycle on H since the
+>> only allowed relation between H and itself is equality).
+
+- Formulas with empty/full dot unclear. Is it
+parameterized/quantified? For each formula with a dot the three
+index sigma formula is is created? Or is the three index \sigma
+formula a disjunction over all empty/full dot formulas the body of
+which is described?
+>> The empty/full dots are only used to make clear that the 
+>> control (\sigma) and shape (\phi) formulas used for the 
+>> pairs (i_1,i_3) and (i_2,i_3) need not be the same as the 
+>> one for (i_1,i_2). Using indices would have been messy. 
+>> We improved the explanation.
+
+Section 1
+
+- You should explain that your approach depends on the ability to
+explicitly specify linearziation points in each operation. The
+linearization points can be conditional, but have to be fixed.
+>> In the experiments depicted in this papers, we indeed fixed the
+>> linearization points in the code. However, the approach is more 
+>> general as one can instead "guess" linearization points betwen
+>> calls and returns of methods, or even check abscence of traces 
+>> that violate properties other than linearizability.
+
+
+- The implication of the above is that you cannot specify/verify
+algorithms such as Heller's lazy-list? (or at least, not all
+operations) [cav06]
+>> There is a different between specification in terms of
+>> linearization points, and the implementation of the data
+>> structure and finding the linearization points. No matter how
+>> these linearization points happen, their traces have to follow
+>> the same observers as those we describe here. Indeed, the 
+>> specification part has to do with the abstract data type, and it 
+>> also holds for data-structures where you cannot associate the 
+>> linearization point to a specific line of code. For such 
+>> data-structures, one can use calls and returns
+>> in order to see if it is possible to guess a linearization point
+>> that respect the same observers as those we present here.
+
+
+Section 4
+
+- Generally, checking whether a program is data independent is
+undecidable in general. The syntactic analysis that you suggest to
+determine data independence is probably similar to that of
+[issta14]?
+>> It is in fact simpler since the mentioned work strictly generalises 
+>> the data-independence definition of Wolper.
+
+- Your comment about the set of traces of a set being not data
+independent maybe suggests that there's a more subtle notion of
+being data independent with respect to the semantics of the data
+structure?
+>> Interesting. That would simplify verification. This goes in the 
+>> direction of the previous question and the work mentioned there. 
+>> Our definition of data independence does not include sets.
+
+
+Section 6.1
+
+- You should relate your symbolic encoding to that of [tacas06] and
+[vmcai05]. You can also benefit from [cav07] when trying to address
+verification of composite data structures.
+>> We have added the references and a short text relating the 
+>> symbolic encodings into Related work.
+
+
+References
+
+[vmcai05] Predicate Abstraction and Canonical Abstraction for
+Singly-Linked Lists. VMCAI 2005
+
+[cav06] Formal Verification of a Lazy Concurrent List-Based Set
+Algorithm. CAV 2006.
+
+[tacas06] A Local Shape Analysis Based on Separation Logic. TACAS
+2006
+
+[cav07] Shape Analysis for Composite Data Structures. CAV 2007
+
+[issta14] Verifying atomicity via data independence. ISSTA 2014.
+
+-----------------------------------------------------------------------
+
+Report 003-R-7
+
+
+
+- Authors should clearly delineate for which kinds of data structures the observer automaton is 
+applicable. For instance, it is not clear from the text at all whether a binary search tree or similar 
+data structure can be handled. 
+>> an observer is used to capture the behaviour of a
+>> data-structure by following the sequence of encountered events,
+>> irrespective of the actual implementation of the data-structure.
+>>  This is now clarified in 3.1
+
+
+- The "pair of threads" approach is very interesting but is not motivated well enough in the 
+introduction. Can one not write an invariant relating the state of a single thread and the state of the 
+memory and indicate that certain memory contents do not change while this thread is enabled to 
+access?
+>> In Section 6, we have added examples of situations where two thread
+>> views are needed, together with an explanation of why these
+>> situations can be handled with one thread only if garbage
+>> collection is assumed and why that technique cannot be used if
+>> garbage collection is not assumed.
+
+- One of the key contributions, the fact that linearizability can be checked by checking a few small 
+properties of the algorithms, needs to be carefully fleshed out and described crisply in the 
+introduction. Which kinds of programs does this approach apply to? What restrictions are needed 
+about the linearizable data structure for this to hold? How is it that you can get away with not 
+using a simulation or refinement based argument? 
+>> This is indeed an important contribution of the paper. We are using 
+>> observers to track simple properties of traces, and from there we
+>> are deducing the linearizability of the data structure. Data
+>> independence allows us to use simpler observers. As stated earlier, 
+>> the observers capture the specification of the data-structure, not
+>> its implementation. In other words, irrespective of the details of
+>> the implementation of a stack, as long as it is data-independent, 
+>> we can restrict the analysis to the few properties tracked by the observers.
+
+- Please cite the TACAS paper that this paper is derived from.
+>> Indeed. Added.
+
+- Why is it that, unlike [4], you can do away with keeping track of heaps emanating from sequential 
+reference executions?
+>> We are using a thread modular  approach where the executions are
+>> not sequential (see section 6.2-interference)
+
+
+- Please emphasize that your method assumes a sequentially consistent memory model.
+>> This was indeed implicit. Clarified in the introduction. 
+
+
+- It would be *extremely* helpful to state and prove a top-level soundness theorem. This theorem 
+would also provide a formal statement of the applicability and claims made by the method. 
+
+>> We sketch an approach that integrates and adapts several
+>> techniques for different applications (not only checking
+>> linearizability). We believe that stating and proving, in a asatisfying way, 
+>> a theorem would require a level of details that would shadow the main
+>> contribution of the paper: namely integrating and adapting shape
+>> analysis, observers, and data-independence arguments for parameterized
+>> number of threads manipulating unbounded singly linked lists in the 
+>> abscence of a garbage collector. 
+
+
+- Please also state and quantify when the shape analysis presented and the associated verification 
+procedure is applicable, what its complexity is and under what assumptions. 
+
+>> The idea of using data-independence and observers does not depend
+>> on the shape analysis, as long as it is sound. The shape analysis
+>> we adopt is a simplification of [6] to singly linked and acyclic data structures.
+
+- Please describe the fixpoint analysis used to compute the program invariant, and its complexity 
+and when it returns a non-trivial invariant. Please also contrast with other approaches for arriving 
+at such invariants in a concurrent program.
+>> The precise non joined encoding (6.1) is a simplification of
+>> Rakajamajich [6] (e.g., no cycles) and is reminiscent of a simple 
+>> separation logic with list predicates. The joined representation 
+>> corresponds to a cartesian abstraction to memory configurations 
+>> by joining predicates on pairs of variables and data cells.
+
+
+
+- Please discuss more specifically how garbage collection makes the task easier or harder, and 
+why the lack of GC requires correlating states of multiple threads, or, why GC enables one not to 
+do this. 
+>> The analysis needs to take care of the ages, as even Treiber does
+>> not work without them. The two threads view discards situations 
+>> where two threads are about to free the same cell (a single thread 
+>> modular cannot forbid this).
+
+
+- Please explain the method from a pure user's point of view as well. Given a concurrent 
+implementation of a data structure that one would like to verify linearizability of, what would the 
+user have to do? What are some guidelines for obtaining the observer automata? When is the 
+method applicable?
+
+>> Given a concurrent data-structure, a user can choose an existing
+>> observer for that data-structure, or build a new one. We use
+>> observers that observe events using a finite number of
+>> variables taking arbitrary values to characterize a set of (typically
+>> bad) traces O. 
+>> The user can then use the observer in shape analysis, like the one
+>> we propose. The analysis needs to be sound with respect 
+>> to a set of traces A, i.e. the analysis has to cover all possible
+>> concrete traces in A.
+
+>> We check that A is disjoint from O (emptiness of the product).
+>> For the specific case of data-independent data-structures, we show 
+>> that A can be the set of differentiated traces, i.e., we can
+>> restrict the analysis and the observers to differentiated traces.
+>> This makes it possible to build simpler observers and to restrict
+>> the shape analysis to a finite data-domain.
+
+
+
+
+
+- Item 3 at the end of page 1: I understand from the text that if program does not rely on GC, ABA 
+problem occurs and this should be considered. Is ABA the only problem that should be addressed 
+in the absence of GC? 
+>> The ABA problem results in traces that violate the expected
+>> behaviour of the data structure. This is only an example of
+>> problems occurring when not accounting for the absence of GC. 
+>> Double frees are other examples.
+
+- I also do not understand the relation of ABA problem with GC. A pointer 
+can be updated and reset to the old value by another thread in the existence of GC and the other 
+thread can not understand the intermediate change in the value. 
+>> Indeed, but the older thread might pop what it thinks is still the
+>> top of a stack when in fact it is no longer the case. The
+>> implementation is then no more the one of a stack. 
+
+- Also, why ABA problem is 
+relevant for verification of a programs that do not utilize syncronization constructs like locks, 
+barriers etc.?
+>>The ABA problem violates the intended semantics of a
+>> data-structure. It is therefore relevant no matter how the
+>> data-structure is implemented.
+
+
+- End of third paragraph on page 2: It is stated that data values from an infinite domain are only 
+compared by equalities or inequalities. However, some formula can be formed on the age fields of 
+variables using <,> operators, as shown in the paragraph before the last paragraph of Section 6.1. 
+This is confusing.
+>> We do not use the data independence argument for the ages. These
+>> are not part of the input/output description of the
+>> data-structure. In fact we do not allow, for data-independence, 
+>> (dis)equality tests on the data either. 
+
+
+- The beginning of Page 4, definition of age field: The age field is attached to pointer not the 
+pointed object if I understand correctly. I could not find any information about the update of age 
+field in symbolic encoding part (postcondition computation esp.). What happens if two pointers 
+point to the same object and the object is updated by using one of them? Does the other pointer's 
+age stay same? If it stays the same, will not this cause a problem? If not, how do you resolve this 
+problem?
+>> The age is related to the pointer not the object. So the second age
+>> is not changed, but the arelation between the two is updated. The
+>> information is kept in the control formula (see \sigma in
+>> Fig. 11). In fact, it is this difference that will avoid the ABA
+>> problem for the stack example.
+
+
+- Section 3.1.: It is claimed that three observers exactly capture the set behaviour. A proof or a 
+reference to a proof page should be provided. 
+>> A proof would start by describing the specification of a set in
+>> terms of possible traces. We believe such a specification would 
+>> be very close to the one we describe.
+
+- Figure 4: When the configuration is in location s_1, trace must lead to s_2 if isEmpty() returns 
+false and stay in s_1 if isEmpty returns true. Since transitions do not depend on return values of 
+events, a trace may lead to s_2 even if isEmpty() returns false according to this observer definition. 
+If it depends transitions depend on return values of events, observer definition should be modified.
+
+>> Indeed. This was a typo. 
+
+
+- Last paragraph of Section 3.2.: Observer in Figure 3 is defined in terms of set operations, not 
+enqHigh(d), enqLow(d) etc. Hence, it is not clear for me that how it captures a case the queue 
+returns a low priority element if a high priority element is inserted later on. Changes in the 
+observer should be explained.
+
+>> The reviewer must mean figure 5. The observer only captures certain
+>> bad behaviours and does not try to completely define the behaviour
+>> of a priority queue.
+
+
+- Second paragraph after Theorem 1: It is stated that sets can be specified by observers although 
+they are not data independent. What property of sets make it specifiable by an observer without 
+data independence argument? Are there a class of data structures that can be specified with 
+observers directly? Since observer is a newly introduced class of automata, showing results about 
+expressivity or limitations of it would be beneficial.
+(*set spec*)
+>> We do not need data independence when no counting is
+>> required. There is at most a copy of each data value in the set. 
+>> So we can track an arbitrary value to see whether it is in the set
+>> or not. 
+
+>> Observe that our isEmpty, like insert and delete, only returns when it 
+>> succeeds. For this reason it does not need a return value. isEmpty 
+>> can only claim the set to be empty. It cannot claim the set to not
+>> be empty. We checked that isEmpty cannot return if an arbitrary 
+>> value is present in the set (which is enough for this method). 
+>> Checking that each time isEmpty returns false then the set is indeed empty 
+>> (which we do not do because our is empty does not have a return 
+>> value), would require to count the number of inserts 
+>> and deletes of each element (tracking an arbitrary value is not
+>> enough, one needs to know how many elements are present in the
+>> set). This would be possible by augumenting the observer with a counter. 
+
+>> To further simplify the presentation, we replaced in the
+>> specification our original isEmpty that only returns in case the set
+>> is empty with contains(p,true/false) which returns whether the 
+>> the element p is in the set or not. It should be clear that this
+>> method does not return counting because we track an arbitrary value.
+
+
+- Beginning of proof of Lemma 1: Is \rho an element of operational or observational run, i.e., 
+counting and ordering properties are true for both observational and operational behaviours. If 
+both, it should be stated explicitly. Also, reader should be directed to a web page or a technical 
+report for the proofs of counting and ordering properties for completeness.
+>> It is an arbitrary operational run. Counting property says that the
+>> number of stored occurrences of a letter is the number of pushes 
+>> minus the number of pops of the same letter. The second one follows 
+>> from the operational semantics of a stack. Since d_i and d_j are
+>> pushed exactly once without being popped. then they appear exactly 
+>> twice in the fifo order.
+
+
+
+
+- Figure 11: Some variables are confusing. What is x and #? There are no such variables or 
+constants in M&S algorithm in Figure 1. Why does not Thread 2 have local t variable? Why are 
+there no NULL, UNDEF or FREE terms that are defined in cell terms? I assume that the observer 
+for this figure is the one described in Figure 10 since we have two observer variables. However, it 
+would be better if this is stated. 
+
+>> This is not related to M&S. It is some arbitrary example to
+>> illustrate how a concrete shape can be captured. The caption is
+>> updated. We did not add the UNDEF and FREE terms to ease the
+>> presentation.
+ 
+
+
+- Postcondition Computation: How are the age fields computed? Since shape formula does not 
+contain any information about age fields and control formula only contain comparative information 
+about age fields, how do you update the age fields in control formula? For instance, if x.age < 
+y.age previously in the control formula previously and x pointer is updated, how do you decide 
+whether x.age = y.age or x.age < y.age in the next state?
+>> We account for both and generate two control formulae.
+
+
+- Could shape analysis be used for programs running on an unbounded heap? Are there any 
+limitations? Can we use shape analysis to represent an unbounded vector for instance?
+
+>> Yes, as long as you keep track of a finite number of variables or
+>> data cells. The heap might be unbounded. Of course you need to 
+>> abstract those cells that are not pointed to by some variable or 
+>> that do not correspond to a data cell.
+
+
+- Expansion of DBM is never introduced.
+>> This is similar to [5] and[9] as explained in the latter part of paragraph 1 page 10.
+
+
+-----------------------------------------------------------------------
+Report 003-R-5
+
+
+- p5, 1st para: "Since the data values... over all data values."
+Could you perhaps give an example?
+
+>> An important property for a set is to not "loose" its content. 
+>> Say a faulty implementation ignore value 10. During the analysis 
+>> against the observer that captures all traces where a value is said 
+>> to not be there when in fact it should, we leave the tracked value 
+>> uninitialised in the observer. These correspond to unconstrained 
+>> variables. If there is a value that gets the observer to the
+>> accepting state (i.e. to detect a bad trace, as 10 does in this 
+>> example), then the observer will find it.
+
+- "By restricting the allowed traces we can again use the observers defined in this section."
+I do not follow:
+(1) by "restricting" you mean using the data independence argument of Sec 4?
+>> Yes. Added a note. 
+
+p6. para "Note that the set of traces...argument." 
+Could you please elaborate? Which observers are necessary for modelling sets?
+
+>> The observers 2,3 and 4 are enough for sets. See the discussion
+>>   (*set spec*) above
+
+p9. Table inside Fig 11. I don't understand why this able is not symmetric along the diagonal.
+(1) specifically, the pi[#,x] and pi[x,#], and the pi[x,x] entries seem incorrect.
+(2) if it is indeed intended to be symmetric, then it suffices to draw only half of the table.
+>> (1) was a typo; fixed. (2) It is indeed symmetric (modulo the change of the direction of reachability predicates). 
+
+p10, left column.
+"We say that a joines shape constaint M(i1, i2) is saturated..." to the end of the paragraph.
+This is hard to follow.
+>> We have modified the concerned text.
+

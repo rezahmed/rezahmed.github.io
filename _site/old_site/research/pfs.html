@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "/docs//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
+<head>
+<title>The PFS prototype webpage</title>
+<style type="text/css" media="screen">
+@import url(css/maincss.css);
+</style>
+<link rel="stylesheet" type="text/css" media="print" href="css/print.css"/docs/>
+<link rel="stylesheet" type="text/css" media="screen" href="css/rightcol.css" />
+<meta http-equiv="Content-Type" content="text/html" />
+<meta name="Description" content="Prototype for checking safety for parameterized finite state systems" />
+<meta name="Keywords" content="parameterized systems, infinite-state, safety, model checking, verification, cache coherence, mutual exclusion" />
+<script type="text/javascript" language="JavaScript"></script>
+</head>
+<body>
+
+<!-- Start Header -->
+<div id="tophead" class="tophead"><a href="http://www.uu.se/" title="Till universitetets hemsida.">UPPSALA UNIVERSITET</a> : <a href="http://www.it.uu.se" title="Till min institution">Institutionen f&ouml;r Informationsteknologi</a> : <a href="http://www.it.uu.se/research/docs/fm/apv">Algorithmic Program Verification Group</a>
+<!-- End Header -->
+
+<!-- Start Menu -->
+<div id="leftcolumn">
+<a href="http://www.uu.se"><img src="img/uulogo_grey.gif" width="160" height="160" alt="Uppsala universitet" /></a>
+<p>PFS webpage</p>
+<p><a href="#intro">Introduction</a></p>
+<p><a href="#down">Download</a></p>
+<p><a href="#instr">Instruction</a></p>
+<p><a href="#ex">Case Studies</a></p>
+<p><a href="#publ">Related Publications</a></p>
+<!-- End Menu -->
+
+<!-- Start Main -->
+<div id="maincontent"> 
+<h1>PFS Prototype </h1>
+
+<h2><a  name="intro">Introdution</a></h2>
+
+<p>PFS is a prototype for the verification of parameterized systems. A parameterized system consists of an arbitrary number of identical state machines running in parallel. For instance, many cache coherence protocols as well as mutual exclusion algorithms fit into this modeling framework. The prototype performs backward reachability over an over-approximation of the system in order to check safety property. All details are in [1].</p>
+
+<img class="my_pos" src="img/param_sys.jpeg" alt="parameterized system" title="Instance of a parameterized system" />
+
+<h3>Models</h3>
+The model we adopt is that of parameterized systems where each process is a finite-state machine; i.e., each process has a finite set of finite domain variables (including the control state). Transition within a process can be of one of the following forms:
+<ol>
+  <li>A process can change the values of its local variables and possibly move to another control state.</li>
+  <li>A process can chek if all other processes (or all processes to its left/right) satisfy a given condition over their local variables. In case yes, the process proceeds in a similar manner to rule (1).</li>
+  <li>A process can chek if at least one other processe (or one process to its left/right) satisfies a given condition over its local variables. In case yes, the process proceeds in a similar manner to rule (1).</li>
+</ol>
+
+Possible extensions consist in adding
+<ul>
+  <li>finite domain shared (or global) variables which maybe changed during transitions like local variables (supported by the prototype);</li>
+  <li>broadcast transition where a process (called initiator) forces all processes which satisfy a given condition to change states simultaneously, possibly their local variables too (supported by the prototype);</li>
+  <li>dynamic creation and deletion of processes (supported by the prototype);</li>
+  <li>binary communication where two processes change state simultaneously if they statisfy given conditions (not supported).</li>
+</ul>
+
+<h3>Properties</h3>
+PFS checks parameterized system models against safety property. For instance, given a model (as described above), a configuration of the system is a sequence of process states, each describing the values of local variables and the current control state. If we assume that in the process model there is a critical control state, then the set of unsafe configuration correspond to the set of sequences containing at least two process states where the control location is critical. The goal is to check if the set of unsafe configurations is unreachable from the set of "initial" configurations regardless of the number of processes in the system.
+
+<h2><a  name="down">Download</a></h2>
+PFS is free and open source. You can download the source code for free from below. Distribution is under the GNU General Public License (GPL). PFS runs on Linux. <a href="files/pfs.tar.gz">pfs.tar.gz</a>.
+
+<h2><a  name="instr">Instructions</a></h2>
+After extracting the archive, read the file "README.txt". It should suffice to run "make depend" then "make main".
+The input language of the prototype is simple. Check the examples files to get inspired.
+
+<h2><a name="ex">Case studies</a></h2>
+Follows some mutual exclusion algorithms and cache coherence
+protocols the safety of which was verifyed by <a href="#down">PFS</a>.
+Check the <a href="#publ"> technical report</a> for a detailed description.
+
+<table border="0">
+<tr>
+<th bgcolor="gray"> Mutual Exclusion Algorithms</th>
+<th bgcolor="gray"> Iterations</th>
+<th bgcolor="silver"> Cache Coherence Protocols</th>
+<th bgcolor="silver"> Iterations</th>
+</tr>
+<tr>
+<td align="center" bgcolor="silver"> Bakery</td> <td align="center" bgcolor="silver">  2</td>
+<td align="center" bgcolor="gray">  Synapse</td> <td align="center" bgcolor="gray">    3</td>
+</tr>
+<tr>
+<td align="center" bgcolor="gray">  Bakery<sup>(*)</sup></td> <td align="center" bgcolor="gray"> 2 </td>
+<td align="center" bgcolor="silver">  Berkley</td> <td align="center" bgcolor="silver">  2</td>
+</tr>
+<tr>
+<td align="center" bgcolor="silver">  Burns</td> <td align="center" bgcolor="silver">  14</td>
+<td align="center" bgcolor="gray">  Mesi</td> <td align="center" bgcolor="gray">  3</td>
+</tr>
+<tr>
+<td align="center" bgcolor="gray">  Burns<sup>(*)</sup></td> <td align="center" bgcolor="gray"> 9</td>
+<td align="center" bgcolor="silver">  Moeisi</td> <td align="center" bgcolor="silver">  1</td>
+</tr>
+<tr>
+<td align="center" bgcolor="silver">  Java M-lock</td> <td align="center" bgcolor="silver">  5</td>
+<td align="center" bgcolor="gray">  Dec Firefly</td> <td align="center" bgcolor="gray"> 3</td>
+</tr>
+<tr>
+<td align="center" bgcolor="gray">  Java M-lock<sup>(*)</sup></td> <td align="center" bgcolor="gray">  5</td>
+<td align="center" bgcolor="silver">  Xerox P.D</td> <td align="center" bgcolor="silver">  3</td>
+</tr>
+<tr>
+<td align="center" bgcolor="silver">  Dijkstra</td> <td align="center" bgcolor="silver"> 13</td>
+<td align="center" bgcolor="gray">  Illinois</td> <td align="center" bgcolor="gray"> 5</td>
+</tr>
+<tr>
+<td align="center" bgcolor="gray">  Dijkstra<sup>(*)</sup></td> <td align="center" bgcolor="gray"> 8</td>
+<td align="center" bgcolor="silver">  Futurebus</td> <td align="center" bgcolor="silver"> 7</td>
+</tr>
+<tr>
+<td align="center" bgcolor="silver">  Szymanski</td> <td align="center" bgcolor="silver">  17</td>
+<td align="center" bgcolor="gray">  German</td> <td align="center" bgcolor="gray"> 44</td>
+</tr>
+<tr>
+<td align="center" bgcolor="gray">  Szymanski<sup>(*)</sup></td> <td align="center" bgcolor="gray"> 17</td>
+<td align="center">  </td> <td align="center">  </td>
+</tr>
+</table>
+
+<p>Here (*) means that processes may be non-deterministically created/deleted while in state "idle". </p>
+
+<p>Besides the German protocol, the verification of which required 3h45mn, all these examples were
+verified in less than 5 seconds on a Pentium M 1.6 Ghz. </p>
+
+<p>All case studies are fully described in [2].</p>
+
+<h2><a  name="publ">Related Publications</a></h2>
+
+<p>[1] <b>Main paper: </b>Regular Model Checking without Transducers. <small><i>Parosh Aziz Abdulla, Noomene Ben Henda, Giorgio Delzanno, and Ahmed Rezine. Proc. TACAS 2007, 13th International Conference on Tools and Algorithms for the Construction and Analysis of Systems. </i><a href="files/lossy_abstract.pdf">PDF</a>, <a href="files/lossy_abstract.ps">PS</a>.</small></p>
+
+<p>[2] <b>Technical report: </b>Regular Model Checking without Transducers (On Efficient Verification of Parameterized Systems). <small><i>Parosh Aziz Abdulla, Noomene Ben Henda, Giorgio Delzanno, and Ahmed Rezine. IT-database 2006. </i><a href="http://www.it.uu.se/research/publications/reports/2006-052/">Link</a>.</small></p>
+
+<p><b>Presentation slides: </b><a href="files/tacas07-b4.pdf">tacas07-b4.pdf</a></p>.
+
+<table>
+<tr>
+<td><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a></td>
+<td><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.it.uu.se/research/docs/fm/apv/tools/pfs"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></td>
+</tr>
+</table>
+
+
+
+
+
+</div>
+<!-- End Main -->
+
+<!-- Start Contact -->
+<div id="rightcolumn">
+<div class="boxhdr">Contact us</div>
+<div class="box">
+<a href="https://www.it.uu.se/katalog/nbh"><img src="img/noomene.jpg" width="152" height="166" alt="Noomene Ben Henda" /></a>
+<p><b>Email: </b></p>
+<p><a href="mailto:noomene.benhenda@it.uu.se"><small><small>noomene.benhenda@it.uu.se</small></small></a></p>
+<p><b>URL: </b></p>
+<p><a href="http://user.it.uu.se/~nbh"><small><small>http://user.it.uu.se/~nbh</small></small></a></p>
+<br/>
+<a href="https://www.it.uu.se/katalog/rahmed"><img src="img/ahmed.jpg" width="152" height="166" alt="Ahmed Rezine" /></a>
+<p><b>Email: </b></p>
+<p><a href="mailto:rezine.ahmed@it.uu.se"><small><small>rezine.ahmed@it.uu.se</small></small></a></p>
+<p><b>URL: </b></p>
+<p><a href="http://user.it.uu.se/~rahmed"><small><small>http://user.it.uu.se/~rahmed</small></small></a></p></p>
+<!-- End Contact -->
+
+<!-- Start Footer -->
+<div id="footer" class="sidfot">
+&copy;-2007. UPPSALA UNIVERSITET, Box 138, 751 05 Uppsala | 
+<!-- hhmts start --> Last modified: Mon Apr 23 16:04:28 MEST 2007 <!-- hhmts end --> | Webmasters: <a href="mailto:noomene.benhenda@it.uu.se ">Noomene Ben Henda</a> and <a href="mailto:rezine.ahmed@it.uu.se">Ahmed Rezine</a>
+
+</div>
+<!-- End footer -->
+
+</body>
+</html>

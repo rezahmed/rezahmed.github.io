@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+	<title></title>
+
+	<!-- Open Graph Meta -->
+	<meta content="Ahmed Rezine" property="og:site_name" /><meta content="Ahmed Rezine" property="og:title" /><meta content="website" property="og:type" /><meta content="Homepage powered by Long Haul, a Jekyll theme built with SASS" property="og:description" /><meta content="http://localhost:4000/old_site/research/flextm-date2013/" property="og:url" /><meta
+		content="http://localhost:4000/assets/img/thelj.jpg"
+		property="og:image"
+	/><!-- Stylesheet -->
+	<link rel="stylesheet" href="/assets/css/style.css" />
+
+	<!-- Canonical URL -->
+	<link
+		rel="canonical"
+		href="http://localhost:4000/old_site/research/flextm-date2013/"
+	/>
+
+</head>
+<body> <div class="header ">
+     <div class="container">
+         <h1 class="logo"><a href="/">Ahmed Rezine</a></h1>
+         <nav class="nav-collapse">
+             <ul class="noList"><li class="elementfirst">
+                     <a href="/index.html">Home</a>
+                 </li><li class="elementcurrent">
+                     <a href="/research">Research</a>
+                 </li><li class="elementlast">
+                     <a href="/teaching">Teaching</a>
+                 </li></ul>
+         </nav>
+     </div>
+ </div><!-- end .header -->
+<div class="content">
+      <div class="container">
+         <h2>Research</h2>
+
+<h3>Verifying Safety and Liveness for the FlexTM Hybrid Transactional Memory</h3>
+  
+<p>Authors: Parosh Aziz, Sandhya Dwarkadas, <a href="http://www.ahmedrezine.com">Ahmed Rezine</a>, Arrvindh Shriramanx and Yunyun Zhu</p>
+
+<p> Abstract: 
+We consider the verification of safety (strict se- rializability and abort consistency) and liveness (obstruction and livelock freedom) for the hybrid transactional memory framework FLEXTM. This framework allows for flexible imple- mentations of transactional memories based on an adaptation of the MESI coherence protocol. FLEXTM allows for both eager and lazy conflict resolution strategies. Like in the case of Software Transactional Memories, the verification problem is not trivial as the number of concurrent transactions, their size, and the number of accessed shared variables cannot be a priori bounded. This complexity is exacerbated by aspects that are specific to hardware and hybrid transactional memories. Our work takes into account intricate behaviours such as cache line based conflict detection, false sharing, invisible reads or non-transactional instructions. We carry out the first automatic verification of a hybrid transactional memory and establish, by adopting a small model approach, challenging properties such as strict serializability, abort consistency, and obstruction freedom for both an eager and a lazy conflict resolution strategies. We also detect an example that refutes livelock freedom. To achieve this, our prototype tool makes use the latest antichain based techniques to handle systems with tens of thousands of states.
+ </p>
+
+<p>  In Proceedings of the Design, Automation & Test in Europe, DATE 2013 </p>
+
+<p> Last version (<a href="/docs/flextm-date2013.pdf">pdf</a>) 2013</p>
+
+
+
+      </div>
+   </div><!-- end .content --><div class="footer">
+	<div class="container">
+	  <p class="copy">
+	    </br>
+	  </p>
+	  <p class="copy">
+		  Powered by <a href="http://jekyllrb.com">Jekyll</a>, adapted from the <a href="https://jekyllthemes.io/theme/long-haul">Long Haul theme</a>.</a> 
+		</p>
+	</div>
+</div>
+<!-- end .footer -->
+<!--<!-- Add jQuery and other scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src=/assets/js/jquery-1.11.2.min.js><\/script>')</script>
+<script src="/assets/js/dropcap.min.js"></script>
+<script src="/assets/js/responsive-nav.min.js"></script>
+<script src="/assets/js/scripts.js"></script>
+-->
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+	<title></title>
+
+	<!-- Open Graph Meta -->
+	<meta content="Ahmed Rezine" property="og:site_name" /><meta content="Ahmed Rezine" property="og:title" /><meta content="website" property="og:type" /><meta content="Homepage powered by Long Haul, a Jekyll theme built with SASS" property="og:description" /><meta content="http://localhost:4000/old_site/research/BR-towards-2011/" property="og:url" /><meta
+		content="http://localhost:4000/assets/img/thelj.jpg"
+		property="og:image"
+	/><!-- Stylesheet -->
+	<link rel="stylesheet" href="/assets/css/style.css" />
+
+	<!-- Canonical URL -->
+	<link
+		rel="canonical"
+		href="http://localhost:4000/old_site/research/BR-towards-2011/"
+	/>
+
+</head>
+<body> <div class="header ">
+     <div class="container">
+         <h1 class="logo"><a href="/">Ahmed Rezine</a></h1>
+         <nav class="nav-collapse">
+             <ul class="noList"><li class="elementfirst">
+                     <a href="/index.html">Home</a>
+                 </li><li class="elementcurrent">
+                     <a href="/research">Research</a>
+                 </li><li class="elementlast">
+                     <a href="/teaching">Teaching</a>
+                 </li></ul>
+         </nav>
+     </div>
+ </div><!-- end .header -->
+<div class="content">
+      <div class="container">
+         <h2>Research</h2>
+
+<h3>
+
+<h2>Software Model Checking for GPGPU Programs, Towards a Verification Tool</h3>
+Unmesh Bordoloi, <a href="http://www.ahmedrezine.com">Ahmed Rezine</a>
+
+<p>The tremendous computing power GPUs are capable of makes of them the epicenter of an unprecedented attention for applications other than graphics and gaming. Apart from the highly parallel nature of the programs to be run on GPUs, the sought after gain in computing power is only achieved with low level tuning at threads level and is therefore veryerror prone. In fact the level of intricacy involved when writing such programs is already a problem and will become a major bottleneck in spreading the technology.
+
+Only very recent and rare works started looking into using formal methods for helping GPU programmers avoiding errors like data races, incorrect synchronizations or assertions violations. These are at their infancy and directly import techniques adapted for other (sequential) systems with simple approximations for concurrency. Besides that, theonly help we are aware of right now takes a concrete input and explores a tiny portion of the possible thread scheduling looking for such errors. This easily misses common errors and makes of GPU programming a nightmare task. There is therefore still a lot of work to do in order to come up with helpful and scalable tools for today's and tomorrow's GPGPU software.
+
+We state in this paper our intention in building in Linköping a agship verication tool that will take CUDA code and track and report, with minimal assistance from the programmer, errors like data races, incorrect synchronizations or assertions violations. In order to achieve this ambitious and vital goal for the widespread of GPU programming, webuild on our experience using and implementing CUDA and GPU code and on our latest work in the verication of multicore and concurrent programs. In fact, GPU programs like those written in CUDA are suitable for verication as they typically neither manipulate pointer arithmetics nor allowrecursion. This restricts the focus to concurrency and array manipulation, combined with intra and inter procedural analysis. To give a avor of where we start from, we report on our experiments in automatically verifying two synchronization algorithms that appeared in a recent paper proposing effiient barriers for inter-block synchronization. Unlike any other verication approach for GPU programs,we can show that the algorithms neither deadlock nor violate the barrier condition regardless of the number of threads. We also capture bugs in case basic relations are violated between the number of blocks and the number of threads per block.</p>
+
+<p> Published in <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-76411">urn:nbn:se:liu:diva-76411</a>, </p>
+
+<p> Last version (<a href="/docs/BR-towards-2011.pdf">pdf</a>) 2011</p> 
+
+
+
+      </div>
+   </div><!-- end .content --><div class="footer">
+	<div class="container">
+	  <p class="copy">
+	    </br>
+	  </p>
+	  <p class="copy">
+		  Powered by <a href="http://jekyllrb.com">Jekyll</a>, adapted from the <a href="https://jekyllthemes.io/theme/long-haul">Long Haul theme</a>.</a> 
+		</p>
+	</div>
+</div>
+<!-- end .footer -->
+<!--<!-- Add jQuery and other scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src=/assets/js/jquery-1.11.2.min.js><\/script>')</script>
+<script src="/assets/js/dropcap.min.js"></script>
+<script src="/assets/js/responsive-nav.min.js"></script>
+<script src="/assets/js/scripts.js"></script>
+-->
+
+</body>
+
+</html>

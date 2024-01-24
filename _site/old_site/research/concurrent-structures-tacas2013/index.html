@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+	<title></title>
+
+	<!-- Open Graph Meta -->
+	<meta content="Ahmed Rezine" property="og:site_name" /><meta content="Ahmed Rezine" property="og:title" /><meta content="website" property="og:type" /><meta content="Homepage powered by Long Haul, a Jekyll theme built with SASS" property="og:description" /><meta content="http://localhost:4000/old_site/research/concurrent-structures-tacas2013/" property="og:url" /><meta
+		content="http://localhost:4000/assets/img/thelj.jpg"
+		property="og:image"
+	/><!-- Stylesheet -->
+	<link rel="stylesheet" href="/assets/css/style.css" />
+
+	<!-- Canonical URL -->
+	<link
+		rel="canonical"
+		href="http://localhost:4000/old_site/research/concurrent-structures-tacas2013/"
+	/>
+
+</head>
+<body> <div class="header ">
+     <div class="container">
+         <h1 class="logo"><a href="/">Ahmed Rezine</a></h1>
+         <nav class="nav-collapse">
+             <ul class="noList"><li class="elementfirst">
+                     <a href="/index.html">Home</a>
+                 </li><li class="elementcurrent">
+                     <a href="/research">Research</a>
+                 </li><li class="elementlast">
+                     <a href="/teaching">Teaching</a>
+                 </li></ul>
+         </nav>
+     </div>
+ </div><!-- end .header -->
+<div class="content">
+      <div class="container">
+         <h2>Research</h2>
+
+<h3>An Integrated Specification and Verification Technique for Highly Concurrent Data Structures</h3>
+  
+<p>Authors: Parosh Aziz Abdulla, Frédéric Haziza, Lukas Holik, Bengt Jonsson  and <a href="http://www.ahmedrezine.com">Ahmed Rezine</a></p>
+
+<p> Abstract: 
+We present a technique for automatically verifying safety properties of concurrent programs, in particular programs which rely on subtle dependen- cies of local states of different threads, such as lock-free implementations of stacks and queues in an environment without garbage collection. Our technique addresses the joint challenges of infinite-state specifications, an unbounded num- ber of threads, and an unbounded heap managed by explicit memory allocation. Our technique builds on the automata-theoretic approach to model checking, in which a specification is given by an automaton that observes the execution of a program and accepts executions that violate the intended specification. We extend this approach by allowing specifications to be given by a class of infinite-state au- tomata. We show how such automata can be used to specify queues, stacks, and other data structures, by extending a data-independence argument. For verifica- tion, we develop a shape analysis, which tracks correlations between pairs of threads, and a novel abstraction to make the analysis practical. We have imple- mented our method and used it to verify programs, some of which have not been verified by any other automatic method before.
+ </p>
+
+<p>  In Proceedings of the 19th International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS 2013) </p>
+
+<p> Last version (<a href="/docs/concurrent-structures-tacas2013.pdf">pdf</a>) 2013</p>
+
+
+
+      </div>
+   </div><!-- end .content --><div class="footer">
+	<div class="container">
+	  <p class="copy">
+	    </br>
+	  </p>
+	  <p class="copy">
+		  Powered by <a href="http://jekyllrb.com">Jekyll</a>, adapted from the <a href="https://jekyllthemes.io/theme/long-haul">Long Haul theme</a>.</a> 
+		</p>
+	</div>
+</div>
+<!-- end .footer -->
+<!--<!-- Add jQuery and other scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src=/assets/js/jquery-1.11.2.min.js><\/script>')</script>
+<script src="/assets/js/dropcap.min.js"></script>
+<script src="/assets/js/responsive-nav.min.js"></script>
+<script src="/assets/js/scripts.js"></script>
+-->
+
+</body>
+
+</html>
