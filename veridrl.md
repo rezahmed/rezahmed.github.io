@@ -5,6 +5,7 @@ title: VeriDRL - Verification of Deep Reinforcement Learning Applications
 
 <div class="post">
      <h2> {{page.title}} </h2>
+     <h4>PI. Ahmed Rezine, Co-PI. Soheil Samii</h4>
      <p> Machine learning (ML) solutions are being massively adopted
      in all sorts of applications. This project particularly targets
      Deep Reinforcement Learning (DRL) for control
