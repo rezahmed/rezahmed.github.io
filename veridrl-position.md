@@ -89,7 +89,7 @@ title: Open Position: VeriDRL - Verification of Deep Reinforcement Learning Appl
 
      <h3> More information </h3>
 
-     <p>This project will be supervised by < a href="mailto:ahmed.rezine@liu.se">Ahmed Rezine</a> (main
+     <p>This project will be supervised by <a href="mailto:ahmed.rezine@liu.se">Ahmed Rezine</a> (main
      supervisor) and <a href="mailto:soheil.samii@liu.se">Soheil Samii</a> (assistant supervisor). More
      information can be found <a
      href="https://rezahmed.github.io/veridrl/.">here</a>. Feel free
