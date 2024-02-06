@@ -18,7 +18,7 @@ title: Open Position: VeriDRL - Verification of Deep Reinforcement Learning Appl
 
     <ul>
     <li>See CUGS announcement for required specifications that are
-    specific to the the CUGS doctoral school.</li>
+    specific to the the <a href="https://www.ida.liu.se/ext/cugs/">CUGS doctoral school</a>.</li>
     <li>Experience with independently identifying non-trivial goals,
     to plan the work and to conduct it.</li>
     <li>Interest and maturity in terms of Mathematical proofs, Logic
