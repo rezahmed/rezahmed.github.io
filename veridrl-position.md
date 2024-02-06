@@ -3,15 +3,16 @@ layout: default
 title: Open Position: VeriDRL - Verification of Deep Reinforcement Learning Applications
 ---
 
-<div class="post"> <h2> {{page.title}} </h2> <h4>PI. Ahmed Rezine,
-     Co-PI. Soheil Samii</h4> <p class="intro"><span
-     class="dropcap">W</span>e welcome applications for a PhD student
-     position on extending applicability of formal verification for
-     safety properties of Deep Reinforcement Learning (DRL) based
-     applications. The Phd student position is hosted by the Embedded
-     Systems Laboratory (ESLAB) at the Computer and Information
-     Science Department in Linköping University. The position is fully
-     funded by the CUGS Graduate School in Computer Science.</p>
+<div class="post"> <h2> {{page.title}} </h2>
+
+     <p"><span class="dropcap">W</span>e welcome applications for a
+     PhD student position on extending applicability of formal
+     verification for safety properties of Deep Reinforcement Learning
+     (DRL) based applications. The Phd student position is hosted by
+     the Embedded Systems Laboratory (ESLAB) at the Computer and
+     Information Science Department in Linköping University. The
+     position is fully funded by the CUGS Graduate School in Computer
+     Science.</p>
 
      <h3>Qualifications</h3>	
 
