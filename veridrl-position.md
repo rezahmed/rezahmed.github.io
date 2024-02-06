@@ -5,14 +5,16 @@ title: Open Position: VeriDRL - Verification of Deep Reinforcement Learning Appl
 
 <div class="post"> <h2> {{page.title}} </h2>
 
-     <p><span class="dropcap">W</span>e welcome applications for a
-     PhD student position on extending applicability of formal
+     <p><span class="dropcap">W</span>e welcome applications for a PhD
+     student position on extending applicability of formal
      verification for safety properties of Deep Reinforcement Learning
      (DRL) based applications. The Phd student position is hosted by
-     the Embedded Systems Laboratory (ESLAB) at the Computer and
-     Information Science Department in Linköping University. The
-     position is fully funded by the CUGS Graduate School in Computer
-     Science.</p>
+     the <a href="https://www.ida.liu.se/labs/eslab/">Embedded Systems
+     Laboratory (ESLAB)</a> at the <a
+     href="https://liu.se/en/organisation/liu/ida/sas">Software and
+     Systems Division</a> in <a href="https://liu.se/">Linköping
+     University</a>. The position is fully funded by the CUGS Graduate
+     School in Computer Science.</p>
 
      <h3>Qualifications</h3>	
 
