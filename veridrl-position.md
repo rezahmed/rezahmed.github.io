@@ -5,7 +5,7 @@ title: Open Position: VeriDRL - Verification of Deep Reinforcement Learning Appl
 
 <div class="post"> <h2> {{page.title}} </h2>
 
-     <p"><span class="dropcap">W</span>e welcome applications for a
+     <p><span class="dropcap">W</span>e welcome applications for a
      PhD student position on extending applicability of formal
      verification for safety properties of Deep Reinforcement Learning
      (DRL) based applications. The Phd student position is hosted by
