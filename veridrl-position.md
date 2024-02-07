@@ -8,7 +8,7 @@ title: Open Position: VeriDRL - Verification of Deep Reinforcement Learning Appl
      <p><span class="dropcap">W</span>e welcome applications for a PhD
      student position on extending applicability of formal
      verification for safety properties of Deep Reinforcement Learning
-     (DRL) based applications. </p>
+     based applications (DRL based applications). </p>
 
      <h3>Qualifications</h3>	
 
@@ -30,7 +30,7 @@ title: Open Position: VeriDRL - Verification of Deep Reinforcement Learning Appl
     networks. The project is about scaling up the size by coming up
     with new techniques to extend applicability of formal
     verification.</li>
-    <li>Important: the project IS NOT about training and using DNNs
+    <li>Important: the project IS NOT about training and using DNN
     models. It is about verifying DNN models behave correctly in DRL
     Applications.</li>
     </ul>
