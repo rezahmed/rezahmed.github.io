@@ -17,10 +17,11 @@ title: Research
 	and <a href="https://dblp.org/pid/06/0.html">DBLP</a>.</p>
 	<h3>Students</h3>
 	<h4>Current students:</h4>
-	<ul>	
-  		<li><a href="https://liu.se/medarbetare/kamho23">Kamran Hosseini</a>. Main advisor. Developing and exploiting verification methods for neural networks.</li>
-  		<li><a href="https://portal.research.lu.se/en/persons/anahita-baninajjar">Anahita Baninajjar</a>. Secondary advisor. Verification friendly methods and neural networks.</li>
-  		<li><a href="https://liu.se/en/employee/aylba04">Ayla Babazade</a>. Secondary advisor. </li>		
+	<ul>
+	  <li><a href="https://liu.se/medarbetare/jonhj37">Jonathan Hjort</a>. Main advisor. Extending verification of DRLs for embedded systems.</li>
+  	  <li><a href="https://liu.se/medarbetare/kamho23">Kamran Hosseini</a>. Main advisor. Developing and exploiting verification methods for neural networks.</li>
+  	  <li><a href="https://portal.research.lu.se/en/persons/anahita-baninajjar">Anahita Baninajjar</a>. Secondary advisor. Verification friendly methods and neural networks.</li>
+  	  <li><a href="https://liu.se/en/employee/aylba04">Ayla Babazade</a>. Secondary advisor. </li>		
   	</ul>
 	<h4>Previous students:</h4>
 	<ul>	
