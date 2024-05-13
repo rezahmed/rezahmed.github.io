@@ -21,7 +21,7 @@ title: Research
 	  <li><a href="https://liu.se/medarbetare/jonhj37">Jonathan Hjort</a>. Main advisor. Extending verification of DRLs for embedded systems.</li>
   	  <li><a href="https://liu.se/medarbetare/kamho23">Kamran Hosseini</a>. Main advisor. Developing and exploiting verification methods for neural networks.</li>
   	  <li><a href="https://portal.research.lu.se/en/persons/anahita-baninajjar">Anahita Baninajjar</a>. Secondary advisor. Verification friendly methods and neural networks.</li>
-  	  <li><a href="https://liu.se/en/employee/aylba04">Ayla Babazade</a>. Secondary advisor. </li>		
+  	  <li><a href="https://liu.se/en/employee/aylba04">Ayla Babazade</a>. Secondary advisor. Design and Optimization of Time-Sensitive Networks. </li>		
   	</ul>
 	<h4>Previous students:</h4>
 	<ul>	
