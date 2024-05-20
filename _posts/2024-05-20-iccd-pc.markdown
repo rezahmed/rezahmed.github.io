@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "PC member of Track 2 in ICCD24"
+date:   2024-05-20
+---
+
+<p class="intro"><span class="dropcap">P</span>c member of the "Software Architecture, Compilers and Tool Chains" track of the "42nd IEEE International Conference on Computer Design" (ICCD 2024). </p>
+
+ 
