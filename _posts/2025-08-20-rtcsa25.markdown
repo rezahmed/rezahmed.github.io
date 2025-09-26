@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Accepted paper at RTCS25"
+title:  "Accepted paper at RTCS 2025"
 date:   2025-08-22
 ---
 
-<p class="intro"><span class="dropcap">P</span>aper on "<a href="https://ieeexplore.ieee.org/document/11153135">Integrated Cost Optimization and Preemptable Scheduling for Real-Time Ethernet Applications</a>" accepted for publication at IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA).</p>
+<p class="intro"><span class="dropcap">P</span>aper on "<a href="https://ieeexplore.ieee.org/document/11153135">Integrated Cost Optimization and Preemptable Scheduling for Real-Time Ethernet Applications</a>" accepted for publication at the IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (<a href="https://rtcsa2025.github.io/">RTCSA</a>).</p>
 
  
