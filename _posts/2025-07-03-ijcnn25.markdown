@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Accepted paper at IJCNN25 on \"Robustness and Privacy Interplay in Patient Membership Inference\""
+date:   2025-07-03
+---
+
+<p class="intro"><span class="dropcap">P</span>aper on "<a href="https://lucris.lub.lu.se/ws/portalfiles/portal/227035246/RobustnessPrivacy_IJCNN25.pdf">Robustness and Privacy Interplay in Patient Membership Inference</a>" accepted for publication at the International Joint Conference on Neural Networks (IJCNN).</p>
+
+ 
