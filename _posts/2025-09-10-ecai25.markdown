@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Paper at ICML"
-date:   2024-05-02
+title:  "Paper at ECAI 2025"
+date:   2025-10-30
 ---
 
-<p class="intro"><span class="dropcap">P</span>aper on "<a href="https://arxiv.org/abs/2312.09748">Verification-Friendly Deep Neural Networks</a>" accepted for publication at the Forty-first International Conference on Machine Learning.</p>
+<p class="intro"><span class="dropcap">P</span>aper on "<a href="https://arxiv.org/abs/2312.09748">Formal Local Implication Between Two Neural Networks</a>" accepted for publication at the European Conference on Artificial Intelligence.</p>
 
  
