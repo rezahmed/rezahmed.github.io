@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Available master and bachelor projects"
+date:   2025-11-14
+---
+
+<p>
+Contact me if interested by these master and bachelor project proposals:
+<ul>
+<li> <a href="/assets/pdf/jsp1.pdf">On writing high-assurance code against timing-attacks in the presence of speculative execution</a> </li>
+<li> <a href="/assets/pdf/protlearn.pdf">Uncovering State-Machine Bugs in Security Protocol Implementations</a> </li>
+<li> <a href="/assets/pdf/busted-angr.pdf">Analyzing Timing Side Channels in Embedded Systems</a> </li>
+</ul>
+</p>	
