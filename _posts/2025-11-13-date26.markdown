@@ -4,7 +4,7 @@ title:  "Accepted paper at DATE 2026"
 date:   2025-11-13
 ---
 
-<p class="intro"><span class="dropcap">P</span>aper on "<a href="assets/pdf/dcut_date2026.pdf">Hyperplane Input Space Cuts for Neural Network
-Verification</a>" accepted for publication at the Design, Automation and Test in Europe Conference (<a href="https://www.date-conference.com/">DATE</a> 2026).</p>
+<p class="intro"><span class="dropcap">P</span>aper on "<a href="/assets/pdf/dcut_date2026.pdf">Hyperplane Input Space Cuts for Neural Network
+Verification</a>" accepted for publication at the Design, Automation and Test in Europe Conference (<a href="https://www.date-conference.com/">DATE 2026</a>).</p>
 
  

@@ -5,16 +5,59 @@
     <description>Homepage powered by Long Haul, a Jekyll theme built with SASS</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 24 Jan 2024 14:51:09 +0100</pubDate>
-    <lastBuildDate>Wed, 24 Jan 2024 14:51:09 +0100</lastBuildDate>
-    <generator>Jekyll v4.3.2</generator><item>
-        <title>New PhD student</title>
-        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt;am looking for a new PhD student to work on extending the applicability of verification to Reinforcement learning. See &lt;a href=&quot;/veridrl&quot;&gt;here&lt;/a&gt; for more information about the project. We will soon announce the position. Contact me if you have questions.&lt;/p&gt;
+    <pubDate>Thu, 13 Nov 2025 14:31:36 +0100</pubDate>
+    <lastBuildDate>Thu, 13 Nov 2025 14:31:36 +0100</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator><item>
+        <title>Accepted paper at DATE 2026</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;aper on &quot;&lt;a href=&quot;/assets/pdf/dcut_date2026.pdf&quot;&gt;Hyperplane Input Space Cuts for Neural Network
+Verification&lt;/a&gt;&quot; accepted for publication at the Design, Automation and Test in Europe Conference (&lt;a href=&quot;https://www.date-conference.com/&quot;&gt;DATE 2026&lt;/a&gt;).&lt;/p&gt;
 
-</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt;am looking for a new PhD student to work on extending the applicability of verification to Reinforcement learning. See &lt;a href=&quot;/veridrl&quot;&gt;here&lt;/a&gt; for more information about the project. We will soon announce the position. Contact me if you have questions.&lt;/p&gt;
-</description><pubDate>Sat, 20 Jan 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/rl-position/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/rl-position/</guid></item><item>
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;aper on &quot;&lt;a href=&quot;/assets/pdf/dcut_date2026.pdf&quot;&gt;Hyperplane Input Space Cuts for Neural Network
+Verification&lt;/a&gt;&quot; accepted for publication at the Design, Automation and Test in Europe Conference (&lt;a href=&quot;https://www.date-conference.com/&quot;&gt;DATE 2026&lt;/a&gt;).&lt;/p&gt;
+</description><pubDate>Thu, 13 Nov 2025 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/date26/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/date26/</guid></item><item>
+        <title>Accepted paper at ECAI 2025</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;aper on &quot;&lt;a href=&quot;https://arxiv.org/abs/2312.09748&quot;&gt;Formal Local Implication Between Two Neural Networks&lt;/a&gt;&quot; accepted for publication at the European Conference on Artificial Intelligence (&lt;a href=&quot;https://ecai2025.org/&quot;&gt;ECAI 2025&lt;/a&gt;).&lt;/p&gt;
+
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;aper on &quot;&lt;a href=&quot;https://arxiv.org/abs/2312.09748&quot;&gt;Formal Local Implication Between Two Neural Networks&lt;/a&gt;&quot; accepted for publication at the European Conference on Artificial Intelligence (&lt;a href=&quot;https://ecai2025.org/&quot;&gt;ECAI 2025&lt;/a&gt;).&lt;/p&gt;
+</description><pubDate>Thu, 30 Oct 2025 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/ecai25/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/ecai25/</guid></item><item>
+        <title>Accepted paper at RTCS 2025</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;aper on &quot;&lt;a href=&quot;https://ieeexplore.ieee.org/document/11153135&quot;&gt;Integrated Cost Optimization and Preemptable Scheduling for Real-Time Ethernet Applications&lt;/a&gt;&quot; accepted for publication at the IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (&lt;a href=&quot;https://rtcsa2025.github.io/&quot;&gt;RTCSA&lt;/a&gt;).&lt;/p&gt;
+
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;aper on &quot;&lt;a href=&quot;https://ieeexplore.ieee.org/document/11153135&quot;&gt;Integrated Cost Optimization and Preemptable Scheduling for Real-Time Ethernet Applications&lt;/a&gt;&quot; accepted for publication at the IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (&lt;a href=&quot;https://rtcsa2025.github.io/&quot;&gt;RTCSA&lt;/a&gt;).&lt;/p&gt;
+</description><pubDate>Fri, 22 Aug 2025 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/rtcsa25/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/rtcsa25/</guid></item><item>
+        <title>Accepted paper at IJCNN 2025</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;aper on &quot;&lt;a href=&quot;https://lucris.lub.lu.se/ws/portalfiles/portal/227035246/RobustnessPrivacy_IJCNN25.pdf&quot;&gt;Robustness and Privacy Interplay in Patient Membership Inference&lt;/a&gt;&quot; accepted for publication at the International Joint Conference on Neural Networks (&lt;a href=&quot;https://2025.ijcnn.org/&quot;&gt;IJCNN&lt;/a&gt;).&lt;/p&gt;
+
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;aper on &quot;&lt;a href=&quot;https://lucris.lub.lu.se/ws/portalfiles/portal/227035246/RobustnessPrivacy_IJCNN25.pdf&quot;&gt;Robustness and Privacy Interplay in Patient Membership Inference&lt;/a&gt;&quot; accepted for publication at the International Joint Conference on Neural Networks (&lt;a href=&quot;https://2025.ijcnn.org/&quot;&gt;IJCNN&lt;/a&gt;).&lt;/p&gt;
+</description><pubDate>Thu, 03 Jul 2025 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/ijcnn25/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/ijcnn25/</guid></item><item>
+        <title>Accepted article at TCAD 2024</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;A&lt;/span&gt;rticle  &quot;&lt;a href=&quot;https://ieeexplore.ieee.org/document/10500863&quot;&gt;On Modeling and Detecting Trojans in Instruction Sets&lt;/a&gt;&quot; accepted for publication in the IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (&lt;a href=&quot;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=43&quot;&gt; TCAD&lt;/a&gt;).&lt;/p&gt;
+
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;A&lt;/span&gt;rticle  &quot;&lt;a href=&quot;https://ieeexplore.ieee.org/document/10500863&quot;&gt;On Modeling and Detecting Trojans in Instruction Sets&lt;/a&gt;&quot; accepted for publication in the IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (&lt;a href=&quot;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=43&quot;&gt; TCAD&lt;/a&gt;).&lt;/p&gt;
+</description><pubDate>Tue, 01 Oct 2024 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/tcad-paper/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/tcad-paper/</guid></item><item>
+        <title>PC member of Track 2 in ICCD24</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;c member of the &quot;Software Architecture, Compilers and Tool Chains&quot; track of the &quot;42nd IEEE International Conference on Computer Design&quot; (ICCD 2024). &lt;/p&gt;
+
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;c member of the &quot;Software Architecture, Compilers and Tool Chains&quot; track of the &quot;42nd IEEE International Conference on Computer Design&quot; (ICCD 2024). &lt;/p&gt;
+</description><pubDate>Mon, 20 May 2024 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/iccd-pc/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/iccd-pc/</guid></item><item>
+        <title>Paper at ICML</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;aper on &quot;&lt;a href=&quot;https://arxiv.org/abs/2312.09748&quot;&gt;Verification-Friendly Deep Neural Networks&lt;/a&gt;&quot; accepted for publication at the Forty-first International Conference on Machine Learning.&lt;/p&gt;
+
+ </description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;P&lt;/span&gt;aper on &quot;&lt;a href=&quot;https://arxiv.org/abs/2312.09748&quot;&gt;Verification-Friendly Deep Neural Networks&lt;/a&gt;&quot; accepted for publication at the Forty-first International Conference on Machine Learning.&lt;/p&gt;</description><pubDate>Thu, 02 May 2024 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/icml-paper/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/icml-paper/</guid></item><item>
         <title>Co-Chair of the E1 Topic at DATE 2024</title>
         <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;C&lt;/span&gt;o-chair of the &quot;Embedded Software Architecture, Compilers and Tool Chains&quot; topic of the &quot;Embedded Systems Design&quot; track of DATE 2024. &lt;/p&gt;
 
@@ -35,12 +78,5 @@
 </description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;C&lt;/span&gt;ongratulation to Adrian Horga for defending his PhD thesis about &lt;a href=&quot;https://liu.diva-portal.org/smash/record.jsf?dswid=-2162&amp;amp;pid=diva2%3A1706950&amp;amp;c=7&amp;amp;searchType=SIMPLE&amp;amp;language=en&amp;amp;query=Adrian+Horga&amp;amp;af=%5B%5D&amp;amp;aq=%5B%5B%5D%5D&amp;amp;aq2=%5B%5B%5D%5D&amp;amp;aqe=%5B%5D&amp;amp;noOfRows=50&amp;amp;sortOrder=author_sort_asc&amp;amp;sortOrder2=title_sort_asc&amp;amp;onlyFullText=false&amp;amp;sf=all&quot;&gt;Performance and Security Analysis for GPU-Based Applications&lt;/a&gt;.&lt;/p&gt;
 </description><pubDate>Thu, 08 Dec 2022 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/defence-adrian/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/defence-adrian/</guid></item><item>
-        <title>Article at Journal of System Architecture</title>
-        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;A&lt;/span&gt;rticle Symbolic identification of shared memory based bank conflicts for GPUs with Adrian Horga, Sudipta Chattopadhyay, Petru Eles and Zebo Peng accepted at Journal of Systems Architecture.&lt;/p&gt;
-
-</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;A&lt;/span&gt;rticle Symbolic identification of shared memory based bank conflicts for GPUs with Adrian Horga, Sudipta Chattopadhyay, Petru Eles and Zebo Peng accepted at Journal of Systems Architecture.&lt;/p&gt;
-</description><pubDate>Wed, 01 Jun 2022 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/symbolic-gpu-jsa/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/symbolic-gpu-jsa/</guid></item></channel>
+        <guid isPermaLink="true">http://localhost:4000/blog/defence-adrian/</guid></item></channel>
 </rss>
