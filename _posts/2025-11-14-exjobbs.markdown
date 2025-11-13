@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Available master and bachelor projects"
-date:   2025-11-14
+title:  "See here for project proposals"
+date:   2025-11-13
 ---
+
+We propose a number of master and bachelor projects.
 
 <p>
 Contact me if interested by these master and bachelor project proposals:

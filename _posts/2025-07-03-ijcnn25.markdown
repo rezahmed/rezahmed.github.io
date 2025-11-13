@@ -4,6 +4,8 @@ title:  "Accepted paper at IJCNN 2025"
 date:   2025-07-03
 ---
 
-<p class="intro"><span class="dropcap">P</span>aper on "<a href="https://lucris.lub.lu.se/ws/portalfiles/portal/227035246/RobustnessPrivacy_IJCNN25.pdf">Robustness and Privacy Interplay in Patient Membership Inference</a>" accepted for publication at the International Joint Conference on Neural Networks (<a href="https://2025.ijcnn.org/">IJCNN</a>).</p>
+On "Robustness and Privacy Interplay in Patient Membership Inference" with Anahita Baninajjar, Amin Aminifar, Kamran Hosseini and Amir Aminifar.
+
+<p>"<a href="https://lucris.lub.lu.se/ws/portalfiles/portal/227035246/RobustnessPrivacy_IJCNN25.pdf">Paper</a>" accepted for publication at the International Joint Conference on Neural Networks (<a href="https://2025.ijcnn.org/">IJCNN</a>).</p>
 
  
