@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Paper at ECAI 2025"
+title:  "Accepted paper at ECAI 2025"
 date:   2025-10-30
 ---
 
