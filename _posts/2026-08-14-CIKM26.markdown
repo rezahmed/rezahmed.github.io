@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Accepted paper at CIKM 2026"
+date:   2026-08-14
+---
+
+On "Uncovering Locally-Persistent Bias with Formal Guarantees and Debiasing" with Anahita Baninajjar and Amir Aminifar.
+
+<p>Paper accepted for publication at the 35th ACM International Conference on Information and Knowledge Management (<a href="https://cikm2026.diag.uniroma1.it/">CIKM 2026</a>).</p>
+
+ 
