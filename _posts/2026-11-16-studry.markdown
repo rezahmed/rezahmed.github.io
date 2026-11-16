@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Open PhD position in automatic formal verification"
+title:  "Open PhD position"
 date:   2026-11-16
 ---
 
-We have an open PhD student position on Automatic Formal Verification of Cyber Physical Systems (CPS).
+We have an open PhD student position on Automatic Formal Verification of Cyber Physical Systems (CPS). The position is funded by <a href="https://elliit.se/">ELLIIT: The Excellence Centre at Linköping – Lund in Information Technology</a>.
 
 More details on the position and on how to apply can be found in English by following <a href= "https://liu.se/en/work-at-liu/vacancies/30277">this link</a> and in Swedish by following <a href="https://liu.se/jobba-pa-liu/lediga-jobb/30210">this link instead</a>.
 
